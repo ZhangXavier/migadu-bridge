@@ -20,15 +20,16 @@ const CallLogList: React.FC<unknown> = () => {
   return (
     <PageContainer
       header={{
-        title: 'Token',
+        title: 'Call Log',
       }}
     >
       <ProTable<CallLogItem>
-        headerTitle="Call Log"
+        headerTitle=""
         actionRef={actionRef}
         rowKey="id"
         search={{
           labelWidth: 'auto',
+          defaultCollapsed: false,
         }}
         editable={{
           type: 'multiple',
