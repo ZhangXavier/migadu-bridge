@@ -111,11 +111,12 @@ const TokenList: React.FC<unknown> = () => {
       }}
     >
       <ProTable<TokenListItem>
-        headerTitle="Token"
+        headerTitle=""
         actionRef={actionRef}
         rowKey="id"
         search={{
           labelWidth: 'auto',
+          defaultCollapsed: false,
         }}
         editable={{
           type: 'multiple',

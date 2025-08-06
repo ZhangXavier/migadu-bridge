@@ -23,6 +23,11 @@ export const useColumns = () => {
       editable: false,
     },
     {
+      title: '描述',
+      dataIndex: 'description',
+      valueType: 'text',
+    },
+    {
       title: '目标邮箱',
       dataIndex: 'targetEmail',
       formItemProps: {

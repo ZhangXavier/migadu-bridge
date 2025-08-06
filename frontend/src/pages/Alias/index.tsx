@@ -20,15 +20,16 @@ const Alias: React.FC<unknown> = () => {
   return (
     <PageContainer
       header={{
-        title: 'Token',
+        title: 'Alias',
       }}
     >
       <ProTable<AliasItem>
-        headerTitle="Alias"
+        headerTitle=""
         actionRef={actionRef}
         rowKey="id"
         search={{
           labelWidth: 'auto',
+          defaultCollapsed: false,
         }}
         editable={{
           type: 'multiple',
