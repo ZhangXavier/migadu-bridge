@@ -240,17 +240,7 @@ export const useTokenColumns = ({
       render: (_node, record, _number, action) => (
         <ConfigProvider componentSize="small">
           <Flex gap="small" wrap>
-            {record?.status === 1 && (
-              <Button
-                variant="text"
-                onClick={() => {
-                  onUpdateStatus(record?.id, 3, action);
-                }}
-              >
-                激活
-              </Button>
-            )}
-            {record?.status === 2 && (
+            {(record?.status === 1 || record?.status === 2) && (
               <Button
                 variant="text"
                 onClick={() => {
